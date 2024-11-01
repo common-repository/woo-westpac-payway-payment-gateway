@@ -1,0 +1,35 @@
+*   Trying 203.2.216.174...
+* Connected to api.payway.com.au (203.2.216.174) port 443 (#0)
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: C:/wamp64/bin\php/php7.0.10/ext/cacert.pem
+  CApath: none
+* SSL connection using TLSv1.2 / AES256-GCM-SHA384
+* Server certificate:
+*  subject: C=AU; ST=New South Wales; L=Wallsend; O=QVALENT Pty Ltd; OU=IT; CN=api.payway.com.au
+*  start date: Jun  8 00:00:00 2017 GMT
+*  expire date: Jun  9 23:59:59 2019 GMT
+*  subjectAltName: host "api.payway.com.au" matched cert's "api.payway.com.au"
+*  issuer: C=US; O=Symantec Corporation; OU=Symantec Trust Network; CN=Symantec Class 3 Secure Server CA - G4
+*  SSL certificate verify ok.
+* Server auth using Basic with user 'T10881_SEC_htnw3e3mhy8cfvfhqfv7ai98rryk4bnugdm2y7kdy9fz2at5mj9qcnht6jdp'
+> POST /rest/v1/transactions HTTP/1.1
+Host: api.payway.com.au
+Authorization: Basic VDEwODgxX1NFQ19odG53M2UzbWh5OGNmdmZocWZ2N2FpOThycnlrNGJudWdkbTJ5N2tkeTlmejJhdDVtajlxY25odDZqZHA6
+Accept: */*
+Content-Length: 816
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------83bc37b7aa87f482
+
+< HTTP/1.1 100 Continue
+< HTTP/1.1 201 Created
+< Location: https://api.payway.com.au/rest/v1/transactions/2068473267
+< Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+< Pragma: no-cache
+< Expires: 0
+< Content-Type: application/json;charset=UTF-8
+< Content-Length: 1228
+< Date: Sat, 02 Dec 2017 13:17:17 GMT
+< Set-Cookie: TS019af3e9=016fc1dd23fd912c65221f98b35904b3449522e277bc88a279fe8808cd7328752a9c06b922d5e7edbe2904f1881e863a7e1da9d82c; Path=/; Secure; HTTPOnly
+< 
+* Connection #0 to host api.payway.com.au left intact
